@@ -1,0 +1,16 @@
+[Unit]
+Description=Spoof WiFi MAC Address
+ConditionPathExists=/usr/local/sbin/spoofmac2.sh
+StopWhenUnneeded=yes
+After=network.target
+Wants=network.target
+Requires=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=-/usr/local/sbin/spoofmac2.sh 'wlp1s0'
+TimeoutSec=0
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target network.target

@@ -1,0 +1,12 @@
+[
+    {
+        "script": {
+            "src":"src/spoofmac2.sh",
+            "dst":"/usr/local/sbin/spoofmac2.sh"
+        },
+        "service": {
+            "src":"src/spoofmac.service",
+            "dst":"/usr/local/lib/systemd/system/spoofmac.service"
+        }
+    }
+]
