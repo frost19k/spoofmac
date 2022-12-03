@@ -1,4 +1,4 @@
-# spoofmac
+# spoofmac <img src="assets/systemd-logomark-small.png" height=7% width=7%>
 Spoof your WiFi's MAC Address automatically on boot
 
 # What does this do?
@@ -34,6 +34,8 @@ There are two parts to this repo. A `.service` file & a shell *script*.
     - Enable the service
 
 - Restart your system
+
+<p align=left><img src="assets/screenshot2.png" height=80%></p>
 
 # Notes
 - I would recommend using known OUI prefixes. Fully random MACs may cause issues.
